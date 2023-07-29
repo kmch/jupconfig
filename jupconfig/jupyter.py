@@ -1,6 +1,10 @@
+"""
+Load the content of this file in the jupyter notebook
+using following commands:
+"""
 # import os
-# import loggers
-# %load {os.path.dirname(loggers.__file__)}/jupyter.py
+# import jupconfig
+# %load {os.path.dirname(jupconfig.__file__)}/jupyter.py
 
 # Set aliases of frequently used jupyter magic commands
 %alias_magic mi matplotlib -p inline
@@ -23,7 +27,7 @@ plt.style.use(['default']) #, 'ggplot'])
 # Configure logging -------------------------------------------
 
 # 1. Set up loggers, handlers and load the log_lvl function
-from loggers.logs import *
+from jupconfig.loggers import *
 
 # 2. Set level of log-messages
 log_lvl(ERROR) # you can also use lll() alias
