@@ -1,10 +1,11 @@
 """
 Load the content of this file in the jupyter notebook
 using following commands:
+
+import os
+import jupconfig
+%load {os.path.dirname(jupconfig.__file__)}/jupyter.py
 """
-# import os
-# import jupconfig
-# %load {os.path.dirname(jupconfig.__file__)}/jupyter.py
 
 # Set aliases of frequently used jupyter magic commands
 %alias_magic mi matplotlib -p inline
@@ -21,7 +22,7 @@ import matplotlib.pyplot as plt
 plt.style.reload_library()
 # print(plt.style.available) 
 # combine styles (right overwrites left wherever they overlap):
-plt.style.use(['default']) #, 'ggplot'])
+plt.style.use(['default', 'plotea'])
 # plt.style.use(['default'])
 
 # Configure logging -------------------------------------------
