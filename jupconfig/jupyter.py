@@ -22,8 +22,10 @@ import matplotlib.pyplot as plt
 plt.style.reload_library()
 # print(plt.style.available) 
 # combine styles (right overwrites left wherever they overlap):
-plt.style.use(['default', 'plotea'])
-# plt.style.use(['default'])
+plt.style.use(['default', 'plotea']) # 'plotea' is a custom style
+# this requires putting plotea/plotea.mplstyle
+# in the right directory of your matplotlib installation
+
 
 # Configure logging -------------------------------------------
 
@@ -38,7 +40,7 @@ log_lvl(ERROR) # you can also use lll() alias
 # or using integers: 0, 10, 20, 30, 40, 50, respectively
 
 # Autocompleting ----------------------------------------------
-# (not sure if that works)
+# (not sure if this works)
 #%config IPCompleter.greedy=True 
 
 # Automatically reload modules before execution
