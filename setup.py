@@ -5,7 +5,12 @@ setup(
     version='0.0.3',
     packages=find_packages(), # organise the internal dependencies, not external 
     install_requires=[
-        'autologging',
+        'autologging', 
+        'geopandas',
+        'json',
+        'pandas', 
+        'rioxarray',
+        'xarray',
     ],    
     description='Set up your Jupyter notebook for autologging etc.',
     author='Kajetan Chrapkiewicz',
