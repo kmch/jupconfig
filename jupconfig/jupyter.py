@@ -1,4 +1,6 @@
 """
+BACKWARD COMPATIBILITY FILE FOR AUTHOR'S OLD NOTEBOOKS
+
 Load the content of this file in the jupyter notebook
 using following commands:
 
@@ -8,21 +10,21 @@ import jupconfig
 """
 
 # Set aliases of frequently used jupyter magic commands
-%alias_magic mi matplotlib -p inline
-%alias_magic mn matplotlib -p notebook
+# %alias_magic mi matplotlib -p inline
+# %alias_magic mn matplotlib -p notebook
 
 # Set matplotlib backend (comment one or the other):
 # - non-interactive plots displayed in a notebook cell
-%matplotlib inline
+# %matplotlib inline
 # - interactive plots displayed in a notebook cell
 # %matplotlib notebook (interactive version)
 
 # Set matplotlib style
-import matplotlib.pyplot as plt
-plt.style.reload_library()
+#import matplotlib.pyplot as plt
+# plt.style.reload_library()
 # print(plt.style.available) 
 # combine styles (right overwrites left wherever they overlap):
-plt.style.use(['default', 'plotea']) # 'plotea' is a custom style
+# plt.style.use(['default', 'plotea']) # 'plotea' is a custom style
 # this requires putting plotea/plotea.mplstyle
 # in the right directory of your matplotlib installation
 
