@@ -15,11 +15,6 @@ requirements:
   run:
     - python
     - autologging
-    - geopandas
-    - json
-    - pandas 
-    - rioxarray
-    - xarray
 
 extra:
   channels:
